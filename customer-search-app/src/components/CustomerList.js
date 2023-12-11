@@ -1,13 +1,13 @@
-// CustomerList.js
-import React from "react";
+// src/components/CustomerList.js
+import React from 'react';
 
 function CustomerList({ customers }) {
   return (
-    <div className="layout-column align-items-center justify-content-start">
+    <div className='customer-list-container'>
       {customers.length === 0 ? (
-        <p data-testid="no-results">No Results Found!</p>
+        <p className='no-results'>No Results Found!</p>
       ) : (
-        <div className="card w-40 pt-30 pb-8 mt-20">
+        <div className='card'>
           <table>
             <thead>
               <tr>
@@ -18,7 +18,7 @@ function CustomerList({ customers }) {
                 <th>Income</th>
               </tr>
             </thead>
-            <tbody data-testid="searched-customers">
+            <tbody className='searched-customers'>
               {customers.map((customer) => (
                 <tr key={customer.name}>
                   <td>{customer.name}</td>

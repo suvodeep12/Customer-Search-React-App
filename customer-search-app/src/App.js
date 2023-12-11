@@ -1,6 +1,7 @@
 // src/App.js
 import React from "react";
 import SearchCustomer from "./components/SearchCustomer";
+import "./App.css";
 
 function App() {
   return (
